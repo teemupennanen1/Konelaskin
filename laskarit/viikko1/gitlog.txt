@@ -1,0 +1,114 @@
+tee@tee-VirtualBox:~/ot_viikko1/tiedostoja$ git log --stat | cat
+commit 0b4b6017a9e351193463577c867bbbd9bec97051
+Author: Teemu Pennanen <teemu.pennanen1@gmail.com>
+Date:   Mon Nov 7 13:48:34 2022 +0200
+
+    Kai se näin piti tehdä
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 0484aa78248c023047761882913d1ebf1aac4d30
+Author: Teemu Pennanen <teemu.pennanen1@gmail.com>
+Date:   Mon Nov 7 13:40:32 2022 +0200
+
+    tiedostoja lisätty
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit c9f6f90817a55e6e203937bb5a5ca41a6d68c2e0
+Author: Teemu Pennanen <teemu.pennanen1@gmail.com>
+Date:   Mon Nov 7 12:26:49 2022 +0200
+
+    lisäyksiä ja poistoja tiedostoihin eka.txt ja kolmas.txt
+
+ eka.txt    | 9 ++++-----
+ kolmas.txt | 9 ++++++++-
+ 2 files changed, 12 insertions(+), 6 deletions(-)
+
+commit 03d524af356743c16d07ca08d777dcaec72ce409
+Author: Teemu Pennanen <teemu.pennanen1@gmail.com>
+Date:   Mon Nov 7 12:24:59 2022 +0200
+
+    tiedosto.txt poistettu ja luotu eka.txt. Tiedosto.txt siis uudelleen nimetty
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit afefe0710801932d5ebf653517518d14ed61e926
+Author: Teemu Pennanen <teemu.pennanen1@gmail.com>
+Date:   Mon Nov 7 12:23:38 2022 +0200
+
+    toinen.txt poistettu
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit c5f7620dc02e5c4d92ed9754e349b4d77a5dc75a
+Author: Teemu Pennanen <teemu.pennanen1@gmail.com>
+Date:   Mon Nov 7 12:20:47 2022 +0200
+
+    poistettu ja lisätty tekstiä tiedosto.txt:hen
+
+ tiedosto.txt | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+
+commit f5f41277acfb1c3e4c5d6725ac56b498ff396274
+Author: Teemu Pennanen <teemu.pennanen1@gmail.com>
+Date:   Mon Nov 7 12:19:56 2022 +0200
+
+    lisätty paljon tekstiä tiedosto.txt:hen
+
+ tiedosto.txt | 100 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 99 insertions(+), 1 deletion(-)
+
+commit 010d5039a7d61ca60b770d8609aa77b67613c2cc
+Author: Teemu Pennanen <teemu.pennanen1@gmail.com>
+Date:   Mon Nov 7 10:34:48 2022 +0200
+
+    stuff hakemisto luotu. Hakemistoon luotu jokin.txt
+
+ stuff/jokin.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 0f7e31246da74d8716b9b7811b37dfbfb3376ac0
+Author: Teemu Pennanen <teemu.pennanen1@gmail.com>
+Date:   Mon Nov 7 10:33:33 2022 +0200
+
+    muutos tokaan ja kolmanteen
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit a2fa7b16325b191a7cd3ed80bf2dd9e2264b8d3e
+Author: Teemu Pennanen <teemu.pennanen1@gmail.com>
+Date:   Mon Nov 7 10:32:12 2022 +0200
+
+    kolmas commit
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 6ceace4d00636d628ebdfa22c82fdef0f8d982e3
+Author: Teemu Pennanen <teemu.pennanen1@gmail.com>
+Date:   Mon Nov 7 10:28:11 2022 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 6026692072ff9c1854551ac8686b02ced25e4c0a
+Author: Teemu Pennanen <teemu.pennanen1@gmail.com>
+Date:   Mon Nov 7 10:25:08 2022 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
