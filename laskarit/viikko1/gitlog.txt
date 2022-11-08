@@ -94,6 +94,8 @@ Date:   Mon Nov 7 10:32:12 2022 +0200
  kolmas.txt | 0
  1 file changed, 0 insertions(+), 0 deletions(-)
 
+tässä se muutos
+
 commit 6ceace4d00636d628ebdfa22c82fdef0f8d982e3
 Author: Teemu Pennanen <teemu.pennanen1@gmail.com>
 Date:   Mon Nov 7 10:28:11 2022 +0200
