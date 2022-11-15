@@ -8,6 +8,4 @@
 
 [komentorivi.txt](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)
 
-vielä yksi muutos README.md:hen
-
-vielä viimeinen muutos?
+[Työajanseuranta](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/konelaskin/dokumentaatio/tuntikirjanpito.md)
