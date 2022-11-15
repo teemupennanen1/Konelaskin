@@ -8,4 +8,6 @@
 
 [komentorivi.txt](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)
 
+### Viikko 2
+
 [Työajanseuranta](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/konelaskin/dokumentaatio/tuntikirjanpito.md)
