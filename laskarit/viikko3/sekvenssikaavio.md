@@ -1,3 +1,4 @@
+´´´mermaid
 sequenceDiagram
     main->>laite: Machine()
     laite->>tankki: FuelTank()
@@ -12,3 +13,4 @@ sequenceDiagram
     kone->>-laite: true
     laite->>+kone: use_energy()
     kone->>-tankki: consume(10)
+´´´
