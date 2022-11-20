@@ -79,4 +79,3 @@ classDiagram
     +int hinta
     }
 ```
-    	
