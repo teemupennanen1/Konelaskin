@@ -17,3 +17,4 @@
 [T1](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/laskarit/viikko3/luokkakaavio.md)
 
 [T2](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/laskarit/viikko3/laajennettu_luokkakaavio.md)
+[Changelog](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/konelaskin/dokumentaatio/changelog.md)
