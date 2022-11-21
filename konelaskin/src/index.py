@@ -1,4 +1,3 @@
-import sys
 from entities.calculation import Calculation
 
 def main():
