@@ -1,20 +1,38 @@
-# OhTe, harjoitustyö
+# Konelaskin
 
-## Tehtävät
+Tämä sovellus on laskin, jolla voidaan laskea erilaisia laskutoimituksia. Laskinta voidaan käyttää graafisen käyttöliittymän kautta osoittimella, tai näppäimistöllä.
 
-### Viikko 1
+## Huomioita Python-versiosta
 
-[gitlog.txt](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/laskarit/viikko1/gitlog.txt)
+Sovellus toimii Python 3.8 versiolla. Aiemmilla tai uudemmilla versioilla sovelluksen toiminnassa voi olla ongelmia.
 
-[komentorivi.txt](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)
+## Dokumentaatio
 
-### Viikko 2
+- [Arkkitehtuuri](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/konelaskin/dokumentaatio/arkkitehtuuri.md)
+- [Changelog](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/konelaskin/dokumentaatio/changelog.md)
+- [Käyttöohje](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/konelaskin/dokumentaatio/kayttoohje.md)
+- [Tuntikirjanpito](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/konelaskin/dokumentaatio/tuntikirjanpito.md)
+- [Vaatimusmäärittely](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/konelaskin/dokumentaatio/vaatimusmaarittely.md)
 
-[Työajanseuranta](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/konelaskin/dokumentaatio/tuntikirjanpito.md)
+## Komentorivitoiminnot
 
-### Viikko 3
+### Ohjelman suorittaminen
 
-[T1](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/laskarit/viikko3/luokkakaavio.md)
+Käynnistä sovellus komennolla
 
-[T2](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/laskarit/viikko3/laajennettu_luokkakaavio.md)
-[Changelog](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/konelaskin/dokumentaatio/changelog.md)
+poetry run invoke start
+
+### Testaus
+
+Suorita testit komennolla:
+
+poetry run invoke test
+
+### Testikattavuus
+
+Testikattavuusraportti generoidaan komennolla
+
+poetry run invoke coverage-report
+
+Raportti generoituu htmlcov-hakemistoon.
+
