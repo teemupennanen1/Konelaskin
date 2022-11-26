@@ -1,5 +1,5 @@
 import unittest
-from entities.calculation import calculation
+import os
 from entities.calculation import Calculation
 
 class TestCalculation(unittest.TestCase):
