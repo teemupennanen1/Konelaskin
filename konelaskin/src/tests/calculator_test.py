@@ -1,4 +1,5 @@
-from konelaskin.src.entities.calculation import Calculation
+import sys
+from src.entities.calculation import Calculation
 import unittest
 
 class TestCalculation(unittest.TestCase):
