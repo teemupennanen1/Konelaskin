@@ -1,6 +1,6 @@
-import sys
-from src.entities.calculation import Calculation
 import unittest
+from entities.calculation import calculation
+from entities.calculation import Calculation
 
 class TestCalculation(unittest.TestCase):
     def setUp(self):
