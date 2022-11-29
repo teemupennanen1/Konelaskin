@@ -8,7 +8,7 @@ Sovellus toimii Python 3.8 versiolla. Aiemmilla tai uudemmilla versioilla sovell
 
 ## Dokumentaatio
 
-- [Arkkitehtuuri](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/konelaskin/dokumentaatio/arkkitehtuuri.md)
+- [Arkkitehtuuri](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/dokumentaatio/arkkitehtuuri.md)
 - [Changelog](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/konelaskin/dokumentaatio/changelog.md)
 - [Käyttöohje](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/konelaskin/dokumentaatio/kayttoohje.md)
 - [Tuntikirjanpito](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/konelaskin/dokumentaatio/tuntikirjanpito.md)
