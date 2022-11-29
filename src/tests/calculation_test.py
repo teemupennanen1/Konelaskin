@@ -1,10 +1,25 @@
+'''Test module for the program'''
 import unittest
-import os
-from src.entities.calculate import Calculation
+from entities.calculate import Calculate
 
 class TestCalculation(unittest.TestCase):
-    def setUp(self):
-        calculation = Calculation()
+    '''This class is for testing the programs'''
+    def setUp(self) -> None:
+        self.calculate = Calculate()
+        self.parts = [2,2]
 
     def test_addtition_operator_returns_correct_value(self):
-        self.assertEqual(self.calculation.calculate("2+2", 4))
+        '''Test for addition'''
+        self.assertEqual(self.calculate.addition(self.parts), 4)
+
+    def test_subraction_operator_returns_correct_value(self):
+        '''Test for addition'''
+        self.assertEqual(self.calculate.subtraction(self.parts), 0)
+
+    def test_multiplication_operator_returns_correct_value_when_natural_number(self):
+        '''Test for addition'''
+        self.assertEqual(self.calculate.multiplication(self.parts), 4)
+
+    def test_division_operator_returns_correct_value_when_natural_number(self):
+        '''Test for addition'''
+        self.assertEqual(self.calculate.division(self.parts), 1)

@@ -1,14 +1,14 @@
-import pygame
+'''Main module'''
 from konelaskin import Konelaskin
 
-'''Importing the module for handling calculations'''
 class Index:
+    '''This class is used for running the program'''
     def __init__(self):
         self.konelaskin = Konelaskin()
 
     def mainloop(self):
         '''Initiates the main loop'''
-    
+
         while True:
             self.konelaskin.handle_events()
 
