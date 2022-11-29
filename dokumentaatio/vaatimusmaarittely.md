@@ -18,6 +18,8 @@ Painamalla näppäimistöllä "Enter"-painiketta lasketaan tekstikentässä olev
 
 ## Jatkokehitysideoita
 
+### Graafinen käyttöliittymä
+
 Laskimelle luodaan graafinen käyttöliittymä, jonka kautta laskutoimituksia laskinta voi käyttää osoittimella. Jokaiselle numerolle ja laskutoimitukselle luodaan oma buttoninsa. 
 
 Buttoneita vastaavat seuraavat merkkijonot:
@@ -37,3 +39,7 @@ Buttoneita vastaavat seuraavat merkkijonot:
 - = "-"
 + = "+"
 = = "="
+
+### Vanhojen laskujen tallentaminen
+
+Vanhat laskut voidaan tallentaa repositorioon, josta niitä pystyy käydä tarkastelemassa. 
