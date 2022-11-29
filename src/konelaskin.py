@@ -43,6 +43,13 @@ class Konelaskin:
                     self.actor = ""
                     if self.operation == "+":
                         self.result = self.calculate.addition(self.parts)
+                    if self.operation == "-":
+                        self.result = self.calculate.subtraction(self.parts)
+                    if self.operation == "*":
+                        self.result = self.calculate.multiplication(self.parts)
+                    if self.operation == "/":
+                        self.result = self.calculate.division(self.parts)
+                    
             if self.left_brackets == self.right_brackets:
                 print(self.result)
                 self.result = ""

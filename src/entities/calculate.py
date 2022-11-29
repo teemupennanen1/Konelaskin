@@ -12,7 +12,13 @@ class Calculate:
             self.addition(parts)
 
     def addition(self, parts):
-        result = 0
-        for p in parts:
-            result += p
-        return str(result)
+        return(parts[0] + parts[1])
+
+    def subtraction(self, parts):
+        return(parts[0] - parts[1])
+
+    def multiplication(self, parts):
+        return(1.0* parts[0] * parts[1])
+
+    def division(self, parts):
+        return(1.0* parts[0] / parts[1])
