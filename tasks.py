@@ -19,3 +19,7 @@ def test(ctx):
 @task
 def pylint(ctx):
     ctx.run("pylint src", pty=True)
+
+@task
+def html_report(ctx):
+    ctx.run("firefox htmlcov/index.html", pty=True)
