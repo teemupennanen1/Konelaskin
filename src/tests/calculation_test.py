@@ -1,4 +1,5 @@
 '''Test module for the program'''
+from multiprocessing.pool import TERMINATE
 import unittest
 from entities.calculate import Calculate
 
@@ -9,17 +10,17 @@ class TestCalculation(unittest.TestCase):
         self.parts = [2,2]
 
     def test_addtition_operator_returns_correct_value(self):
-        '''Test for addition'''
-        self.assertEqual(self.calculate(self.parts, "+"), 4.0)
+        '''Test for addition operation'''
+        self.assertEqual(self.calculate.calculate(self.parts, "+"), 4.0)
 
     def test_subraction_operator_returns_correct_value(self):
-        '''Test for addition'''
-        self.assertEqual(self.calculate.subtraction(self.parts), "-", 0.0)
+        '''Test for subtraction operation'''
+        self.assertEqual(self.calculate.calculate(self.parts, "-"), 0.0)
 
     def test_multiplication_operator_returns_correct_value_when_natural_number(self):
-        '''Test for addition'''
-        self.assertEqual(self.calculate.multiplication(self.parts, "*"), 4.0)
+        '''Test for multiplication operation'''
+        self.assertEqual(self.calculate.calculate(self.parts, "*"), 4.0)
 
     def test_division_operator_returns_correct_value_when_natural_number(self):
-        '''Test for addition'''
-        self.assertEqual(self.calculate.division(self.parts, "/"), 1.0)
+        '''Test for division operation'''
+        self.assertEqual(self.calculate.calculate(self.parts, "/"), 1.0)
