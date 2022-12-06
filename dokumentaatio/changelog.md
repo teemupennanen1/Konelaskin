@@ -15,3 +15,4 @@
 -- Tämä tulostaa "Suljetaanko K/e"
 -- Laskin sammuu komennoilla K ja k
 -- Laskimen käyttöä voidaan jatkaa komennoilla E ja e
+- Jos kaava ei pääty "="-merkkiin, tulostetaan "Muista = merkki loppun"

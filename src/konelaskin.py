@@ -56,11 +56,11 @@ class Konelaskin:
                 self.shutdown_handler()
                 if self.shutdown == "K":
                     break
-            if self.calculation[-1] != "=":
-                print("Muista = merkki viimeiseksi")
-                self.calculation = ""
-            else:
-                self.calculation_handler()
+            if self.calculation != "":
+                if self.calculation[-1] != "=":
+                    print("Muista = merkki viimeiseksi")
+                else:
+                    self.calculation_handler()
             if self.left_brackets == self.right_brackets:
                 if self.shutdown == "K":
                     break
