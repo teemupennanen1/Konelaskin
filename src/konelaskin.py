@@ -12,25 +12,26 @@ class Konelaskin:
         self.calculation = ""
         self.parts = []
         self.operation = ""
-        self.right_brackets = 0
-        self.left_brackets = 0
         self.actor = ""
         self.result = ""
         self.shutdown = "e"
+        self.left_brackets = 0
+        self.right_brackets = 0
 
     def shutdown_handler(self):
+        '''Function for handling the shutdown of the program'''
         while True:
             command = input("Suljetaanko? K/e: ")
-            if command == "K" or command == "k":
+            if command in ("K", "k"):
                 self.shutdown = "K"
                 return
-            if command == "E" or command == "e":
+            if command in ("E", "e"):
                 self.shutdown = "E"
                 return
-            else:
-                print("Sopimaton komento")
+            print("Sopimaton komento")
 
     def calculation_handler(self):
+        '''Function for breaking appart the calculation string'''
         for constant in self.calculation:
             if constant == "(":
                 self.left_brackets += 1
@@ -61,9 +62,8 @@ class Konelaskin:
                     print("Muista = merkki viimeiseksi")
                 else:
                     self.calculation_handler()
-            if self.left_brackets == self.right_brackets:
+            if self.result != "":
                 if self.shutdown == "K":
                     break
-                if self.result != "":
-                    print(self.result)
+                print(self.result)
                 self.result = ""

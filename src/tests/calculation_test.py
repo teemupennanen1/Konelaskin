@@ -1,5 +1,4 @@
 '''Test module for the program'''
-from multiprocessing.pool import TERMINATE
 import unittest
 from entities.calculate import Calculate
 

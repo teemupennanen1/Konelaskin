@@ -3,7 +3,7 @@ class Calculate:
     '''This is the Class that handles the calculations'''
     def __init__(self):
         self.result = ""
-
+        
     def calculate(self, parts, operation):
         '''Main method, where operation is defined'''
         self.parts = parts
@@ -15,7 +15,7 @@ class Calculate:
         if self.operation == "*":
             return self.multiplication(parts)
         if self.operation == "/":
-            return self.division(parts)   
+            return self.division(parts)
 
     def addition(self, parts):
         '''Method for addition'''
