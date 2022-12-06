@@ -10,11 +10,13 @@ Tarkoituksena ei ole lisätä sovellukselle muita käyttäjiä, kuin pääkäytt
 
 ## Käyttöliittymäluonnos
 
-Sovellukselle tulee vain yksi näkymä, joka aukeaa, kun sovellus käynnistetään.
+Tekstikäyttöliittymä. Kun sovellus käynnistetään, tulostuu merkkijono "Anna lauseke: ". Käyttäjä voi laskea yhteen-, vähennys-, kerto- ja jakolaskuja. Jos kaavan lopusta puuttuu "=", laskin muistuttaa käyttäjää tästä tulostamalla "Muista = merkki loppuun". tehty
 
-Näkymän yläosassa on tekstikenttä, johon laskutoimituksia voidaan tehdä näppäimistöllä. Tekstikenttä on oletuksella aktiivinen. Tekstikentän oikeaan alalaitaan tulee aina laskettavan laskutoimituksen tulos. Käyttäjä aktivoi tekstikentän klikkaamalla kenttää.
+Syöttämällä "Anna lauseke: " perään tyhjän merkkijonon, tulostuu "Suljetaanko? K/e". Vastaamalla K tai k ja painamalla Enter, laskin sulkeutuu. Vastaamalla E tai e, laskimen käyttö jatkuu (laskin tulostaa "Anna lauseke: "). Vastaamalla jotain muuta, laskin tulostaa "Sopimaton komento", ja jatkaa seuraavalla rivillä "Suljetaanko? K/e", kunnes vastataan E, e, K tai k. tehty
 
-Painamalla näppäimistöllä "Enter"-painiketta lasketaan tekstikentässä oleva laskutoimitus. Jos tekstikentässä oleva kaava ei ole validi, tulee vastauskenttään teksti "Error".
+Laskimella voidaan laskea myös kertomia.
+
+Käyttäjä voi käyttää myös aiempaa tulosta laskutoimituksen osana. 
 
 ## Jatkokehitysideoita
 
