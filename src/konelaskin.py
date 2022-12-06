@@ -16,14 +16,24 @@ class Konelaskin:
         self.left_brackets = 0
         self.actor = ""
         self.result = ""
+        self.shutdown = "e"
 
     def handle_events(self):
         '''Function for handling the calculator inputs'''
         while True:
-            self.calculation = input("Anna lauseke:")
+            self.calculation = input("Anna lauseke: ")
+            
             for constant in self.calculation:
-                if self.calculation == "":
-                    break
+                if self.calculation == "exit":
+                    while True:
+                        self.shutdown = input("Suljetaanko? K/e: ")
+                        if self.shutdown == "K" or "k":
+                            break
+                        if self.shutdown == "E" or "e":
+                            continue
+                        else:
+                            print("Sopimaton komento")
+                            continue
                 if constant == "(":
                     self.left_brackets += 1
                 if constant == ")":
@@ -36,18 +46,11 @@ class Konelaskin:
                     self.operation = constant
                 if constant == "=":
                     self.parts.append(int(self.actor))
+                    self.result = self.calculate.calculate(self.parts, self.operation)
                     self.actor = ""
-                    if self.operation == "+":
-                        self.result = self.calculate.addition(self.parts)
-                    if self.operation == "-":
-                        self.result = self.calculate.subtraction(self.parts)
-                    if self.operation == "*":
-                        self.result = self.calculate.multiplication(self.parts)
-                    if self.operation == "/":
-                        self.result = self.calculate.division(self.parts)
+                    self.parts = []
             if self.left_brackets == self.right_brackets:
+                if self.shutdown == "K":
+                    break
                 print(self.result)
                 self.result = ""
-
-    def calulate(self):
-        return

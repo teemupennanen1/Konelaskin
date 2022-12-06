@@ -11,6 +11,7 @@ class Index:
 
         while True:
             self.konelaskin.handle_events()
+            break
 
 if __name__== "__main__":
     index = Index()

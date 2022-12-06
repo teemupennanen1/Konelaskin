@@ -15,3 +15,7 @@ def start(ctx):
 @task
 def test(ctx):
     ctx.run("python3 src/tests/calculator_test.py", pty=True)
+
+@task
+def pylint(ctx):
+    ctx.run("pylint src", pty=True)
