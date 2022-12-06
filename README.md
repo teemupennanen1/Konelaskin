@@ -23,25 +23,26 @@ Sovellus hyväksyy kaavoissa merkit "0", "1", "2", "3", "4", "5", "6", "7", "8",
 ### Ohjelman suorittaminen
 
 Käynnistä sovellus komennolla
-
+```bash
 poetry run invoke start
-
+´´´
 ### Testaus
 
 Suorita testit komennolla:
-
+```bash
 poetry run invoke test
-
+´´´
 ### Testikattavuus
 
 Testikattavuusraportti generoidaan komennolla
-
+```bash
 poetry run invoke coverage-report
-
+´´´
 Raportti generoituu htmlcov hakemiston index.html-tiedostoon. Tiedoston voidaan avata juurihakemistossa komennolla 
-
+```bash
 poetry run invoke html-report
-
+´´´
 Pylint ajetaan komennolla
-
+```bash
 poetry run invoke pylint
+´´´
