@@ -14,7 +14,6 @@ Sovellus toimii Python 3.8 versiolla. Aiemmilla tai uudemmilla versioilla sovell
 - [Tuntikirjanpito](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/dokumentaatio/tuntikirjanpito.md)
 - [Vaatimusmäärittely](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/dokumentaatio/vaatimusmaarittely.md)
 - [Testaus](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/dokumentaatio/testaus.md)
-  
 
 ## Komentorivitoiminnot
 
