@@ -14,6 +14,8 @@ Sovellus toimii Python 3.8 versiolla. Aiemmilla tai uudemmilla versioilla sovell
 - [Tuntikirjanpito](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/dokumentaatio/tuntikirjanpito.md)
 - [Vaatimusmäärittely](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/dokumentaatio/vaatimusmaarittely.md)
 - [Testaus](https://github.com/teemupennanen1/ot-harjoitustyo/blob/main/dokumentaatio/testaus.md)
+  
+
 ## Komentorivitoiminnot
 
 Sovellus hyväksyy kaavoissa merkit "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "+", "-", "*", "/", "=", "". 
