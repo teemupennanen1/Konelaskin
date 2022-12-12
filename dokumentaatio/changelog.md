@@ -12,7 +12,14 @@
 - Peruslaskutoimitukset toimivat
 - Tulos on aina liukuluku
 - Laskimen sammutustoiminto käynnistetään antamalla tyhjä merkkijono
--- Tämä tulostaa "Suljetaanko K/e"
--- Laskin sammuu komennoilla K ja k
--- Laskimen käyttöä voidaan jatkaa komennoilla E ja e
+- Tämä tulostaa "Suljetaanko K/e"
+- Laskin sammuu komennoilla K ja k
+- Laskimen käyttöä voidaan jatkaa komennoilla E ja e
 - Jos kaava ei pääty "="-merkkiin, tulostetaan "Muista = merkki loppun"
+
+## Viikko 6
+
+- Pakkausrakennetta järkevöitetty
+- Laskin käsittelee lukuja likulukuina kokonaislukujen sijaan, joten desimaalilukujen laskenta onnistuu
+- komennolla poetry run invoke html-report tehdään coverage testi, luodaa raportt ja avataan html raportti firefoxilla
+- 

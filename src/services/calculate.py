@@ -29,21 +29,17 @@ class Calculate:
     def calculation_logic(self, calculation):
         '''Function for breaking appart the calculation string'''
         for constant in calculation:
-            if constant == "(":
-                self.left_brackets += 1
-            if constant == ")":
-                self.right_brackets += 1
             if constant in numbers or constant == ".":
                 self.actor += constant
             if constant in operators:
                 if self.operator == "":
-                    self.parts.append(int(self.actor))
+                    self.parts.append(float(self.actor))
                     self.actor = ""
                     self.operator = constant
                 else:
                     self.check_operator(constant)
             if constant == "=":
-                self.parts.append(int(self.actor))
+                self.parts.append(float(self.actor))
                 if len(self.parts) == 2:
                     self.result = self.calculate(self.parts, self.operator)
                 self.actor = ""

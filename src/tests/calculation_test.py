@@ -1,4 +1,4 @@
-'''Test module for the program'''
+'''Test module for the calculations'''
 import unittest
 from src.services.calculate import Calculate
 
