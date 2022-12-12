@@ -17,7 +17,23 @@ Sovellus toimii Python 3.8 versiolla. Aiemmilla tai uudemmilla versioilla sovell
 
 ## Komentorivitoiminnot
 
-Sovellus hyväksyy kaavoissa merkit "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "+", "-", "*", "/", "=", "". 
+Sovellus hyväksyy kaavoissa merkit: 
+- "0" 
+- "1"
+- "2"
+- "3"
+- "4"
+- "5"
+- "6"
+- "7"
+- "8"
+- "9"
+- "+"
+- "-"
+- "*"
+- "/"
+- "="
+- "."
 
 "" merkki herättää sammutustoiminnon, jolloin ohjelma tulostaa "Suljetaanko? K/e". Tähän voidaan vastata merkkijonoilla "K", "k", "E" ja "e". Muut merkkijonot tuottavat virheilmaisun. Sammutustoiminnosta pääsee eteenpäin vain hyväksytyillä merkkijonoilla. "K" ja "k" sammuttavat laskimen, kun taas "E" ja "e" jatkavat laskimen käyttöä.
 
