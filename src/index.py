@@ -1,5 +1,5 @@
 '''Main module'''
-from konelaskin import Konelaskin
+from ui.konelaskin import Konelaskin
 
 class Index:
     '''This class is used for running the program'''

@@ -1,6 +1,6 @@
 '''Test module for the program'''
 import unittest
-from entities.calculate import Calculate
+from src.services.calculate import Calculate
 
 class TestCalculation(unittest.TestCase):
     '''This class is for testing the programs'''
