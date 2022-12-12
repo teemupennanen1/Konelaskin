@@ -1,2 +1,0 @@
-![kuvaus](github_linkki)
-
