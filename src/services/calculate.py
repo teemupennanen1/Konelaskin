@@ -10,6 +10,7 @@ class Calculate:
         self.operator = ""
         self.parts = []
         self.actor = ""
+        self.negative = False
 
     def check_operator(self, constant):
         if self.operator == "+" and constant == "+":
@@ -24,22 +25,31 @@ class Calculate:
         if self.operator == "+" and constant == "-":
             self.operator = "-"
             return
-
+    
+    def append_actor(self):
+        if self.negative:
+            self.parts.append(-1.0*float(self.actor))
+            self.negative = False
+            return
+        self.parts.append(float(self.actor))
 
     def calculation_logic(self, calculation):
         '''Function for breaking appart the calculation string'''
         for constant in calculation:
+            if constant == "-" and self.actor == "":
+                self.negative = True
+                continue
             if constant in numbers or constant == ".":
                 self.actor += constant
             if constant in operators:
                 if self.operator == "":
-                    self.parts.append(float(self.actor))
+                    self.append_actor()
                     self.actor = ""
                     self.operator = constant
                 else:
                     self.check_operator(constant)
             if constant == "=":
-                self.parts.append(float(self.actor))
+                self.append_actor()
                 if len(self.parts) == 2:
                     self.result = self.calculate(self.parts, self.operator)
                 self.actor = ""

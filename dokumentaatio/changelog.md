@@ -22,4 +22,4 @@
 - Pakkausrakennetta järkevöitetty
 - Laskin käsittelee lukuja likulukuina kokonaislukujen sijaan, joten desimaalilukujen laskenta onnistuu
 - komennolla poetry run invoke html-report tehdään coverage testi, luodaa raportt ja avataan html raportti firefoxilla
-- 
+- Ensimmäinen jäsenkin voi olla negatiivinen
