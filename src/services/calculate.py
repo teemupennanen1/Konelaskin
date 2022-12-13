@@ -36,7 +36,7 @@ class Calculate:
     def calculation_logic(self, calculation):
         '''Function for breaking appart the calculation string'''
         for constant in calculation:
-            if constant == "-" and self.actor == "":
+            if constant == "-" and len(self.parts) == 0 and self.actor == "":
                 self.negative = True
                 continue
             if constant in numbers or constant == ".":
@@ -51,37 +51,35 @@ class Calculate:
             if constant == "=":
                 self.append_actor()
                 if len(self.parts) == 2:
-                    self.result = self.calculate(self.parts, self.operator)
+                    self.result = self.calculate()
                 self.actor = ""
                 self.parts = []
                 self.operator = ""
         return self.result
 
-    def calculate(self, parts, operation):
+    def calculate(self):
         '''Main method, where operation is defined'''
-        self.parts = parts
-        self.operation = operation
-        if self.operation == "+":
-            return self.addition(parts)
-        if self.operation == "-":
-            return self.subtraction(parts)
-        if self.operation == "*":
-            return self.multiplication(parts)
-        if self.operation == "/":
-            return self.division(parts)
+        if self.operator == "+":
+            return self.addition()
+        if self.operator == "-":
+            return self.subtraction()
+        if self.operator == "*":
+            return self.multiplication()
+        if self.operator == "/":
+            return self.division()
 
-    def addition(self, parts):
+    def addition(self):
         '''Method for addition'''
-        return 1.0*parts[0] + parts[1]
+        return 1.0*self.parts[0] + self.parts[1]
 
-    def subtraction(self, parts):
+    def subtraction(self):
         '''Method for subraction'''
-        return 1.0*parts[0] - parts[1]
+        return 1.0*self.parts[0] - self.parts[1]
 
-    def multiplication(self, parts):
+    def multiplication(self):
         '''Method for multiplication'''
-        return 1.0*parts[0]*parts[1]
+        return 1.0*self.parts[0]*self.parts[1]
 
-    def division(self, parts):
+    def division(self):
         '''Method for division'''
-        return 1.0* parts[0] / parts[1]
+        return 1.0* self.parts[0] / self.parts[1]
