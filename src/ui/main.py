@@ -1,9 +1,6 @@
 '''Calculator module'''
 from services.calculate import Calculate
 
-numbers = ["0","1","2","3","4","5","6","7","8","9"]
-operators = ["+", "-", "*", "/"]
-
 class Konelaskin:
     '''class for the calculator'''
     def __init__(self):
@@ -28,10 +25,22 @@ class Konelaskin:
                 return
             print("Sopimaton komento")
 
+    def options_handler(self):
+        '''Function for displaying the different options available for the program'''
+        print("Voit laskea laskutoimituksia kirjoittamalla ne Anna lauseke: merkkijonon perään \n"
+        "ja painamalla Enter-näppäintä. Muista lisätä laskutoimituksen perään =-merkki! \n"
+        "Kirjoittamalla ohjeet ja painamalla Enter-näppäintä ohjelma tulostaa tämän näkymän \n"
+        "Tyhjä rivi ja Enter-näppäin käynnistää laskimen sammutustoiminnon \n"
+        "Vastaamalla K tai k, laskin sammutetaan \n"
+        "Vastaamalla E tai e jatketaan laskimen käyttöä")
+
     def handle_events(self):
         '''Function for handling the calculator inputs'''
         while True:
-            self.calculation = input("Anna lauseke: ")
+            self.calculation = input("Anna laskutoimitus: ")
+            if self.calculation.casefold() == "ohjeet":
+                self.options_handler()
+                continue
             if self.calculation == "":
                 self.shutdown_handler()
                 if self.shutdown == "K":

@@ -1,7 +1,8 @@
 '''Module for calculations'''
 
-numbers = ["0","1","2","3","4","5","6","7","8","9"]
-operators = ["+", "-", "*", "/", "!"]
+numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "."]
+operators = ["+", "-", "*", "/", "!", "="]
+answer = "ans"
 
 class Calculate:
     '''This is the Class that handles the calculations'''
@@ -11,6 +12,7 @@ class Calculate:
         self.parts = []
         self.actor = ""
         self.negative = False
+        self.answer = ""
 
     def check_operator(self, constant):
         if self.operator == "+" and constant == "+":
@@ -35,7 +37,12 @@ class Calculate:
 
     def calculation_logic(self, calculation):
         '''Function for breaking appart the calculation string'''
+        while "ans" in calculation.casefold() and self.answer != "":
+            calculation = calculation.casefold().replace("ans", str(self.answer))
         for constant in calculation:
+            if constant not in numbers and constant not in operators:
+                print("Epävalidi kaava")
+                return
             if constant == "-" and len(self.parts) == 0 and self.actor == "":
                 self.negative = True
                 continue
@@ -55,6 +62,7 @@ class Calculate:
                 self.actor = ""
                 self.parts = []
                 self.operator = ""
+        self.answer = self.result
         return self.result
 
     def calculate(self):

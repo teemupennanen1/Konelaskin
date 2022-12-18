@@ -24,4 +24,8 @@
 - komennolla poetry run invoke html-report tehdään coverage testi, luodaa raportt ja avataan html raportti firefoxilla
 - Ensimmäinen jäsenkin voi olla negatiivinen
 - Ohjelma osaa tulkita useita peräkkäisiä "+" ja "-" merkkejä, ja antaa oikean tuloksen "-" merkkien parillisuuden perusteella
+
+## Viikko 7
+- Komennolla Ohjeet ohjelma tulostaa ohjeet erilaisille toiminnoille, joita ohjelmaan on rakennettu
+- Ohjelma pitää muistissa edellisen laskutoimituksen tuloksen. Tätä voidaan käyttää seuraavassa laskutoimituksella kirjoittamalla kenttään vakion tilalle ans
 - 

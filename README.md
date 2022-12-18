@@ -1,6 +1,6 @@
 # Konelaskin
 
-Sovellus on laskin, jota käytetään terminaalista käsin (tekstikäyttöliittymä)
+Sovellus on laskin, jota käytetään terminaalista käsin (tekstikäyttöliittymä). 
 
 ## Huomioita Python-versiosta
 
@@ -35,7 +35,18 @@ Sovellus hyväksyy kaavoissa merkit:
 - "="
 - "."
 
-"" merkki herättää sammutustoiminnon, jolloin ohjelma tulostaa "Suljetaanko? K/e". Tähän voidaan vastata merkkijonoilla "K", "k", "E" ja "e". Muut merkkijonot tuottavat virheilmaisun. Sammutustoiminnosta pääsee eteenpäin vain hyväksytyillä merkkijonoilla. "K" ja "k" sammuttavat laskimen, kun taas "E" ja "e" jatkavat laskimen käyttöä.
+"" merkki herättää sammutustoiminnon, jolloin ohjelma tulostaa "Suljetaanko? K/e". Tähän voidaan vastata merkkijonoilla "K", "k", "E" ja "e". Muut merkkijonot tuottavat virheilmaisun "Sopimaton komento". Sammutustoiminnosta pääsee eteenpäin vain hyväksytyillä merkkijonoilla. "K" ja "k" sammuttavat laskimen, kun taas "E" ja "e" jatkavat laskimen käyttöä.
+
+"ohjeet" komento tulostaa laskimen käyttöohjeet:
+
+Voit laskea laskutoimituksia kirjoittamalla ne Anna lauseke: merkkijonon perään
+ja painamalla Enter-näppäintä. Muista lisätä laskutoimituksen perään =-merkki!
+Kirjoittamalla ohjeet ja painamalla Enter-näppäintä ohjelma tulostaa tämän näkymän
+Tyhjä rivi ja Enter-näppäin käynnistää laskimen sammutustoiminnon
+Vastaamalla K tai k, laskin sammutetaan
+Vastaamalla E tai e jatketaan laskimen käyttöä
+
+Ohjelma pitää muistissa edellisen laskutoimituksen tuloksen. Kirjoittamalla laskutoimitukseen vakion tilalle "ans", voidaan edellistä tulosta käyttää laskutoimituksessa.
 
 ### Ohjelman suorittaminen
 
