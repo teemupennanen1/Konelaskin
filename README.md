@@ -50,6 +50,11 @@ Ohjelma pitää muistissa edellisen laskutoimituksen tuloksen. Kirjoittamalla la
 
 ### Ohjelman suorittaminen
 
+Alusta sovellus komennolla
+```bash
+poetry run invoke build
+```
+
 Käynnistä sovellus komennolla
 ```bash
 poetry run invoke start
