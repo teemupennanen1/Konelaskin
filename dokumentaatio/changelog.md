@@ -28,4 +28,5 @@
 ## Viikko 7
 - Komennolla Ohjeet ohjelma tulostaa ohjeet erilaisille toiminnoille, joita ohjelmaan on rakennettu
 - Ohjelma pitää muistissa edellisen laskutoimituksen tuloksen. Tätä voidaan käyttää seuraavassa laskutoimituksella kirjoittamalla kenttään vakion tilalle ans
+- Ohjelma tallentaa repositorioon kaikki laskutoimitukset
 - 
