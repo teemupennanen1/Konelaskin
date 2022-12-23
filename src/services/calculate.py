@@ -1,3 +1,5 @@
+from repositories.calculation_repository import CalculationRepository
+
 '''Module for calculations'''
 
 numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "."]
@@ -63,6 +65,7 @@ class Calculate:
                 self.parts = []
                 self.operator = ""
         self.answer = self.result
+        CalculationRepository.append_calculations(calculation)
         return self.result
 
     def calculate(self):
