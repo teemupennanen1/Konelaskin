@@ -1,5 +1,6 @@
 '''Calculator module'''
 from services.calculate import Calculate
+from repositories.calculation_repository import CalculationRepository
 
 class Konelaskin:
     '''class for the calculator'''
@@ -34,6 +35,12 @@ class Konelaskin:
         "Vastaamalla K tai k, laskin sammutetaan \n"
         "Vastaamalla E tai e jatketaan laskimen käyttöä")
 
+    def print_result(self):
+        '''Function for printing the result of the calculation. This function ensures
+        that the result is a number'''
+        if self.result != None:
+            print(self.result)
+
     def handle_events(self):
         '''Function for handling the calculator inputs'''
         while True:
@@ -54,5 +61,5 @@ class Konelaskin:
             if self.result != "":
                 if self.shutdown == "K":
                     break
-                print(self.result)
+                self.print_result()
                 self.result = ""

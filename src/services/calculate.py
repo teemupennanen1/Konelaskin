@@ -1,5 +1,8 @@
 from repositories.calculation_repository import CalculationRepository
+import os
 
+#dirname = os.path.dirname("./Konelaskin/data")
+dirname = os.path.dirname("./data")
 '''Module for calculations'''
 
 numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "."]
@@ -15,6 +18,7 @@ class Calculate:
         self.actor = ""
         self.negative = False
         self.answer = ""
+        self.repository = CalculationRepository(os.path.join(dirname, "data", "calculations.csv"))
 
     def check_operator(self, constant):
         if self.operator == "+" and constant == "+":
@@ -65,7 +69,8 @@ class Calculate:
                 self.parts = []
                 self.operator = ""
         self.answer = self.result
-        CalculationRepository.append_calculations(calculation)
+        calculation += str(self.result)
+        self.repository.append_calculations(calculation)
         return self.result
 
     def calculate(self):
