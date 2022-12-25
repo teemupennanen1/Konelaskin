@@ -14,4 +14,7 @@
 | 13.12.    | 2     | dokumentaation parantaminen |
 | 18.12.    | 3     | ohjelmaan lisätty ohjeet- ja ans-toiminnot |
 | 21.12     | 5     | lisätty toiminnallisuus vanhojen laskujen tallentamiseksi, ei toimi vielä |
-| yht.      | 37    | |
+| 24.12.    | 4     | laskujen tallentaminen repositorioon |
+| 25.12.    | 5     | .csv tiedoston alustaminen ja relatiivisen polun säätäminen, dokumentaation hienosäätäminen, viimeistely |
+
+| yht.      | 51    | |
