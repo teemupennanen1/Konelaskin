@@ -14,6 +14,12 @@ Asenna riippuvuudet komennolla:
 poetry install
 ```
 
+Alusta ohjelma komennolla:
+
+```bash
+poetry run invoke build
+```
+
 Käynnistä ohjelma komennolla:
 
 ```bash

@@ -11,8 +11,3 @@ Käyttäjärajapinta on eriytetty toiminnoista. Pakkausrakennekaavio on seuraava
 Ohjelman käyttöliittymä on tekstikäyttöliittymä, joka on totetettu omana luokkanaan. Käyttöliittymä vasataanottaa laskettavia lausekkeita ja sulkemiskomennon käyttäjän painettua "Enter"-painiketta, ja käsittelee lausekkeen merkkijonona.
 
 Käyttöliittymä voidaan sulkea antamalla käsiteltäväksi lausekkeeksi tyhjä merkkijono
-
-## Käyttäjät
-
-Sovelluksella ei ole erillisiä käyttäjiä. 
-

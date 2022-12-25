@@ -2,7 +2,7 @@
 
 ## Sovelluksen tarkoitus
 
-Kyseinen sovellus on laskin, jolla pystyy laskemaan peruslaskutoimituksia.
+Kyseinen sovellus on laskin, jolla pystyy laskemaan peruslaskutoimituksia, eli yhteen-, vähennys-, kerto- ja jakolaskuja.
 
 ## Käyttäjät
 
@@ -44,4 +44,10 @@ Buttoneita vastaavat seuraavat merkkijonot:
 
 ### Vanhojen laskujen tallentaminen
 
-Vanhat laskut voidaan tallentaa repositorioon, josta niitä pystyy käydä tarkastelemassa. 
+Laskin pitää kirjaa vanhoista laskutoimituksista. Kun projektin alustaa komennolla 
+
+```bash
+poetry run invoke build
+```
+
+hakemistoon luodaan tiedosto "calculations.csv", jonne tallennetaan omalle rivillee päivämäärä, kellonaika ja laskutoimitus. 
