@@ -1,12 +1,12 @@
 import os
-from pathlib import Path
 from repositories.calculation_repository import CalculationRepository
 
 dirname = os.path.dirname(__file__)
-print(dirname)
 
-dirname = dirname.replace("src", "data/calculations.csv")
-print(dirname)
+dirname = dirname.replace("src", "data")
+filename = "calculations.csv"
 
-with open(dirname, 'w') as file:
-    file.write("date & time, calculation")
+fp = os.path.join(dirname, filename)
+
+with open(fp, 'w') as datafile:
+    datafile.write("date & time, calculation")
